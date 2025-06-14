@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flower Boutique</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo.png"
+              alt="Flower Boutique Logo"
+              style="height: 50px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownBonsai"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Bonsai
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownBonsai"
+                >
+                  <li><a class="dropdown-item" href="#">Chinese Elm</a></li>
+                  <li><a class="dropdown-item" href="#">Juniper</a></li>
+                  <li><a class="dropdown-item" href="#">Rosemary</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Flowers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item" id="loginNavItem">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="bonsaiCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#bonsaiCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#bonsaiCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#bonsaiCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/Slide_01.jpg"
+              class="d-block w-100"
+              alt="Bonsai Tree 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>New Arrivals</h5>
+              <p>Bonsai Trees</p>
+              <button class="btn btn-danger">ORDER NOW</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/Slide_03.jpg"
+              class="d-block w-100"
+              alt="Bonsai Tree 2"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Exquisite Collection</h5>
+              <p>Discover unique Bonsai designs</p>
+              <button class="btn btn-danger">EXPLORE</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/Slide_02.jpg"
+              class="d-block w-100"
+              alt="Flower Arrangement"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fresh Flower Designs</h5>
+              <p>Perfect for any occasion</p>
+              <button class="btn btn-danger">SHOP FLOWERS</button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#bonsaiCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#bonsaiCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section class="search-bar-section py-4">
+        <div class="container">
+          <form class="d-flex justify-content-center align-items-center">
+            <div class="input-group" style="max-width: 600px">
+              <input
+                type="text"
+                class="form-control rounded-pill pe-5"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-link position-absolute end-0 me-2"
+                type="submit"
+                style="z-index: 1"
+              >
+                <i class="bi bi-arrow-right fs-4 text-dark"></i>
+              </button>
+            </div>
+          </form>
+
+          <div class="row mt-4 justify-content-center">
+            <div class="col-4 col-md-3 mb-3">
+              <img
+                src="images/img_01.jpg"
+                class="img-fluid rounded shadow-sm"
+                alt="Image 1"
+              />
+              <p class="text-center mt-2">Flower Baskets</p>
+            </div>
+            <div class="col-4 col-md-3 mb-3">
+              <img
+                src="images/img_02.jpg"
+                class="img-fluid rounded shadow-sm"
+                alt="Image 2"
+              />
+              <p class="text-center mt-2">Boho collection</p>
+            </div>
+            <div class="col-4 col-md-3 mb-3">
+              <img
+                src="images/img_03.jpg"
+                class="img-fluid rounded shadow-sm"
+                alt="Image 3"
+              />
+              <p class="text-center mt-2">Flower Box</p>
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+              <img
+                src="images/img_04.jpg"
+                class="img-fluid rounded shadow-sm"
+                alt="Image 4"
+              />
+              <p class="text-center mt-2">Flower Bouquets</p>
+            </div>
+          </div>
+
+          <div class="row mt-5 align-items-center">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <img
+                    src="images/item_01.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt="Florist's Choice 1"
+                  />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <img
+                    src="images/item_02.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt="Florist's Choice 2"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 text-center text-md-start">
+              <h2 class="display-6 fw-bold">Florist's Choice</h2>
+              <p class="fs-4 text-muted">from $20 to $150</p>
+              <p class="lead">
+                Our fresh designs are made to order with the freshest seasonal
+                stock available.
+              </p>
+              <div class="d-flex justify-content-center justify-content-md-end">
+                <button class="btn btn-danger mt-3">ORDER NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container py-3 bg-success">
+        <p class="text-center text-white mb-0">
+          DESIGNED BY TruongNguQuyen_64131995
+        </p>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="usernameInput" class="form-label"
+                  >Tên đăng nhập:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usernameInput"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="passwordInput" class="form-label">Mật khẩu:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="passwordInput"
+                  required
+                />
+              </div>
+              <div class="d-grid">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  id="loginSubmitBtn"
+                >
+                  Đăng Nhập
+                </button>
+              </div>
+              <div id="loginMessage" class="mt-3 text-danger text-center"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const usernameInput = document.getElementById("usernameInput");
+        const passwordInput = document.getElementById("passwordInput");
+        const loginSubmitBtn = document.getElementById("loginSubmitBtn"); // Nút Đăng Nhập trong modal
+        const loginMessage = document.getElementById("loginMessage");
+        const loginNavItem = document.getElementById("loginNavItem"); // Nút Login trên navbar
+
+        // Hàm kiểm tra và cập nhật trạng thái nút đăng nhập
+        function checkLoginCredentials() {
+          const username = usernameInput.value;
+          const password = passwordInput.value;
+
+          if (username === "TruongNguQuyen" && password === "64131995") {
+            loginSubmitBtn.style.display = "none"; // Ẩn nút Đăng Nhập
+            loginMessage.textContent = "Đăng nhập thành công!";
+            loginMessage.classList.remove("text-danger");
+            loginMessage.classList.add("text-success");
+            loginNavItem.style.display = "none"; // Ẩn nút Login trên navbar
+
+            // Tự động đóng modal sau 2 giây để người dùng thấy thông báo thành công
+            setTimeout(() => {
+              const loginModal = bootstrap.Modal.getInstance(
+                document.getElementById("loginModal")
+              );
+              if (loginModal) {
+                loginModal.hide();
+              }
+            }, 2000);
+          } else {
+            loginSubmitBtn.style.display = "block"; // Hiển thị nút Đăng Nhập
+            loginMessage.textContent = ""; // Xóa thông báo lỗi/thành công nếu có
+            loginMessage.classList.remove("text-success"); // Đảm bảo bỏ lớp text-success
+            loginMessage.classList.add("text-danger"); // Đặt lại lớp text-danger nếu có thông báo lỗi (mặc định sẽ trống)
+          }
+        }
+
+        // Lắng nghe sự kiện 'input' trên cả hai trường để kiểm tra liên tục
+        usernameInput.addEventListener("input", checkLoginCredentials);
+        passwordInput.addEventListener("input", checkLoginCredentials);
+
+        // Vô hiệu hóa hành vi submit mặc định của form để tránh tải lại trang khi có nút submit
+        document
+          .getElementById("loginForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+          });
+
+        // Xử lý sự kiện khi modal đóng (dù đăng nhập thành công hay người dùng tự đóng)
+        const loginModalElement = document.getElementById("loginModal");
+        loginModalElement.addEventListener("hidden.bs.modal", function () {
+          usernameInput.value = ""; // Xóa giá trị đã nhập
+          passwordInput.value = ""; // Xóa giá trị đã nhập
+          loginMessage.textContent = ""; // Xóa thông báo
+          loginSubmitBtn.style.display = "block"; // Đảm bảo nút Đăng Nhập hiển thị lại
+          loginNavItem.style.display = "block"; // Đảm bảo nút Login trên navbar hiển thị lại
+        });
+      });
+    </script>
+  </body>
+</html>

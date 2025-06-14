@@ -1,0 +1,28 @@
+/* Trong file css/style.css của bạn */
+
+.navbar-nav .nav-item .nav-link {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+  border-radius: 5px; /* Bo tròn nhẹ các góc của nút */
+  padding: 8px 15px; /* Thêm padding để nút trông đẹp hơn khi có nền */
+  margin: 0 5px; /* Thêm khoảng cách giữa các nút */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: red; /* Màu nền khi hover (ví dụ: một màu xám nhạt) */
+  color: white; /* Màu chữ khi hover (ví dụ: màu đen) */
+}
+
+/* Hiệu ứng đặc biệt cho dropdown (Bonsai) */
+.navbar-nav .nav-item.dropdown .nav-link:hover {
+  background-color: red; /* Giữ màu nền hover */
+  color: white;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa; /* Màu nền khi hover cho item trong dropdown */
+  color: #000000;
+}
